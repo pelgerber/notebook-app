@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="450"
+   height="450"
+   viewBox="0 0 119.0625 119.0625"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1">
+    <g
+       id="path846"
+       style="display:inline;opacity:0.519383;fill:#7fff2a;stroke:#00ff00;stroke-width:0.94726;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;paint-order:stroke fill markers"
+       transform="matrix(1.1153023,0,0,1.1153023,-6.7591382,-3.5510506)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:9.48921px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.224719"
+         x="109.54324"
+         y="97.180954"
+         id="text10724"><tspan
+           id="tspan10722"
+           style="stroke-width:0.224719"
+           x="109.54324"
+           y="97.180954" /></text>
+      <g
+         id="path15594"
+         transform="rotate(-32.518387,-36.332606,24.711517)">
+        <g
+           id="path45488"
+           transform="rotate(12.521321,-29.995839,50.376701)">
+          <path
+             style="fill:#0033ff;fill-opacity:1;stroke:#000000;stroke-width:2.3723;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="M 46.349075,66.412574 C 98.832378,-3.7206177 100.42283,157.3169 27.745987,138.90862 -36.827285,113.91788 -7.9654756,52.704716 33.539598,39.718496 51.170953,34.20195 39.10154,76.731836 46.349075,66.412574 Z"
+             id="path54630" />
+          <ellipse
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#8300ff;stroke-width:4.7446;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             id="path57048"
+             cx="48.760372"
+             cy="59.177578"
+             transform="rotate(19.997065)"
+             rx="11.50572"
+             ry="7.7092848" />
+          <ellipse
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4.7446;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             id="path57094"
+             cx="81.734634"
+             cy="57.164257"
+             transform="rotate(19.997065)"
+             rx="8.4234009"
+             ry="9.7265196" />
+          <path
+             style="fill:#ff9d00;fill-opacity:1;stroke:#000000;stroke-width:1.18615;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="M 3.6593021,90.230692 35.315278,89.509372 33.974795,102.17579 Z"
+             id="path57515" />
+          <ellipse
+             style="opacity:1;fill:#3f00ff;fill-opacity:1;stroke:#000000;stroke-width:1.18615;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             id="path58000"
+             cx="67.024956"
+             cy="101.76041"
+             transform="rotate(19.997065)"
+             rx="19.810966"
+             ry="4.0325146" />
+          <ellipse
+             style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.98822;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996363;paint-order:stroke fill markers"
+             id="path59344"
+             cx="49.851368"
+             cy="62.498592"
+             transform="rotate(19.997065)"
+             rx="2.931005"
+             ry="4.3882713" />
+          <ellipse
+             style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.7446;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996363;paint-order:stroke fill markers"
+             id="path59346"
+             cx="81.734634"
+             cy="61.908283"
+             transform="rotate(19.997065)"
+             rx="3.4402502"
+             ry="4.9824958" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

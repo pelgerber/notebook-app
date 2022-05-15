@@ -1,0 +1,31 @@
+version: "3.7"
+services:
+  app:
+    image: node:18-alpine
+    container_name: notebook-app
+    command: sh -c "yarn install && yarn dev"
+    ports:
+      - 3000:3000
+      - 9229:9229
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ${ENV_MYSQL_ROOT_PASSWORD}
+      MYSQL_DB: my_database
+      DATABASE_URL: mysql://root:${ENV_MYSQL_ROOT_PASSWORD}@mysql:3306/my_database?connection_limit=5
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${ENV_MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: my_database
+
+volumes:
+  mysql-data:
