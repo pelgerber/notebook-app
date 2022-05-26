@@ -30,7 +30,7 @@ Last step, create the table! Run the following SQL commands to initialize the ta
 /* select the database */
 USE my_database;
 /* create the table */
-CREATE TABLE notes (id VARCHAR(36) NOT NULL, date DATE, title varchar(255), text LONGTEXT, PRIMARY KEY (id));
+CREATE TABLE notes (id VARCHAR(36) NOT NULL, date DATETIME, title varchar(255), text LONGTEXT, PRIMARY KEY (id));
 ```
 
 You're good to go!

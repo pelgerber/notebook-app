@@ -4,6 +4,6 @@ export default function Date({ dateString }) {
   const date = parseISO(dateString);
   return (
     <div className='mx-3 text-center'>
-      <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</time>
+      <time dateTime={dateString}>{format(date, 'LLLL d, yyyy  HH:mm')}</time>
     </div>);
 }
