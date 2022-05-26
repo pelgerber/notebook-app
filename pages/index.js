@@ -1,13 +1,13 @@
-import styles from '../styles/Home.module.css'
-import { Form, Button } from 'react-bootstrap'
+import { Row, Col, Container } from 'react-bootstrap'
 import React from 'react'
 import prisma from '../lib/prisma'
 import Note from '../components/note'
 import Layout from '../components/layout'
-import { Fab, Action } from 'react-tiny-fab';
+import { Fab } from 'react-tiny-fab';
 import 'react-tiny-fab/dist/styles.css';
 import RestrictRender from '../components/restrict-render'
 import Link from 'next/link'
+import { splitArray } from '../lib/utils'
 
 const fabStyle = {
   position: {
@@ -59,13 +59,6 @@ export default function Home({ notes }) {
     setNoteTitle('');
   }
 
-  /* const onNewItem = React.useCallback(
-     newItem => {
-       setItems([...items, newItem]);
-     },
-     [items],
-   );  */
-
   async function submitForm() {
     if (noteTitle) {
       setSubmitting(true);
@@ -79,14 +72,11 @@ export default function Home({ notes }) {
       })
         .then(r => r.json())
         .then(item => {
-          //onNewItem(item);
           setSubmitting(false);
           setLoading(true);
           resetStates();
         });
 
-      //console.log('Title:\n' + noteTitle)
-      //console.log('Text:\n' + noteText)
     } else {
       console.log('Title is empty!!') // TODO: Replace with pop-up
     }
@@ -98,32 +88,22 @@ export default function Home({ notes }) {
       return (<h1>Loading...</h1>);
     } else {
       return (
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center  gap-4">
-          {items.map((item) => (
-            <Note note={item} key={item.id} />
+        <Container>
+          {splitArray(items, 3).map((row, i) => (
+            <Row key={i}>
+              {row.map((col, i) => (
+                <Col key={i}>
+                  <Note note={col} key={col.id} />
+                </Col>
+              ))}
+            </Row>
           ))}
-        </div>);
+        </Container>);
     }
   }
 
   return (
     <Layout>
-      {/*       <Form className={styles.form}>
-        <Form.Group className={"mb-3 " + styles.titlefield}>
-          <Form.Label>Title</Form.Label>
-          <Form.Control type="text" placeholder="Enter title" onChange={evt => setNoteTitle(evt.target.value)} value={noteTitle} />
-          <Form.Text className="text-muted">
-            The title of your note.
-          </Form.Text>
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Label>Text</Form.Label>
-          <Form.Control as="textarea" className={styles.notetext} type="text" placeholder="Note text" onChange={evt => setNoteText(evt.target.value)} value={noteText} />
-        </Form.Group>
-        <Button className='mb-5' onClick={submitForm}>
-          Submit
-        </Button>
-      </Form> */}
       <NotesLoader />
       <RestrictRender client>
         <Link href="/add-note">
