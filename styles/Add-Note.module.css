@@ -1,0 +1,14 @@
+.form {
+
+    width: 100%;
+    max-width: 800px;
+
+}
+
+.titlefield {
+    max-width: 300px;
+}
+
+.notetext {
+    height: 300px;
+}

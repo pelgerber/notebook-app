@@ -17,6 +17,7 @@
     "react": "18.1.0",
     "react-bootstrap": "^2.3.1",
     "react-dom": "18.1.0",
+    "react-tiny-fab": "^4.0.4",
     "uuid": "^8.3.2",
     "wait-port": "^0.2.9"
   },
