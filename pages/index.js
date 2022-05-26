@@ -15,7 +15,7 @@ const fabStyle = {
     right: 0,
   },
   mainButtonStyles: {
-    backgroundColor: '#e74c3c',
+    backgroundColor: '#362ad4',
   },
   alwaysShowTitle: true,
 }
