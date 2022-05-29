@@ -1,0 +1,22 @@
+hr.divider {
+    margin-top: 0;
+    height: 0.5px;
+    color: rgb(144, 144, 247);
+}
+
+.noteheader {
+    height: auto;
+    font-size: small;
+    margin-bottom: 0;
+}
+.notetitle {
+    font-size: large;
+}
+.notebody {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.closebtn {
+    float: right;
+    margin: 5px;
+}

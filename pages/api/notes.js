@@ -4,11 +4,6 @@ import { v4 as uuidv4 } from 'uuid';
 export default async function handler(req, res) {
   if (req.method === 'POST') {
 
-
-    console.log('POST request received!')
-    console.log(req.body)
-
-
     const mydate = new Date(Date.now()).toISOString();
 
     console.log(mydate)
@@ -32,6 +27,18 @@ export default async function handler(req, res) {
 
     try {
       const data = await prisma.notes.findMany({})
+      return res.status(200).json({ data })
+    } catch (err) {
+      console.error(err)
+      return res.status(500).json({ msg: 'Something went wrong' })
+    }
+
+  } else if (req.method === 'DELETE') {
+
+    try {
+      const data = await prisma.notes.delete({
+        where: { id: req.body.id },
+      })
       return res.status(200).json({ data })
     } catch (err) {
       console.error(err)
