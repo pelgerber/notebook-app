@@ -3,7 +3,7 @@ services:
   app:
     image: node:18-alpine
     container_name: notebook-app
-    command: sh -c "yarn install && yarn dev"
+    command: sh -c "yarn install && apk add openssl1.1-compat && ./node_modules/.bin/prisma generate && yarn dev"
     ports:
       - 3000:3000
       - 9229:9229
